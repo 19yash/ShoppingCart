@@ -23,9 +23,9 @@ const Cart = () => {
             {
                 cart.length ?
 
-                    <div className="flex gap-4 w-11/12 mx-auto max-w-[1260px] p-4 min-h-[85vh]  justify-around  ">
+                    <div className="flex flex-col  min-[870px]:flex-row gap-4 mt-6 w-11/12 mx-auto max-w-[1260px] p-4 min-h-[85vh]  justify-between  ">
 
-                        <div className="flex flex-col gap-3 w-full item-center">
+                        <div className="flex flex-col gap-3 min-[870px]:w-[70%]  lg:w-[60%] item-center">
                             {
                                 cart.map(
                                     (product) => (
@@ -35,14 +35,14 @@ const Cart = () => {
                             }
                         </div>
 
-                        <div className="flex flex-col justify-between w-full items-center">
-                            <div className="mt-14 ">
+                        <div className="flex flex-col min-[870px]:w-[30%]  lg:w-[30%] ">
+                            <div className="mt-14  ">
                                 <h2 className="text-[18px]">Your cart</h2>
                                 <h1 className="text-[34px]">Summary</h1>
                                 <p className="text-[18px] mt-4">Total Items : {cart.length}</p>
                             </div>
 
-                            <div className="">
+                            <div className="mt-4">
                                 <p className="text-[18px] font-semibold">Total Ammount : ${totalAmount}</p>
                                 <button className=" py-3 px-12 bg-slate-500 rounded-md text-white mt-5 text-[18px] ">Checkout Now</button>
                             </div>

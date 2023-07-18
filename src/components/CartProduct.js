@@ -10,7 +10,7 @@ const CartProduct = ({ product }) => {
         toast.error("Item is Removed");
     }
     return (
-        <div className=" flex items-center justify-between p-4  hover:scale-105 w-full gap-12 border-b-4">
+        <div className=" flex-col min-[450px]:flex-row flex items-center justify-between p-4   hover:scale-105 w-full gap-12 border-b-4">
 
             <div className="w-1/2">
                 <img src={product.image} alt="" className="h-[180px] " />

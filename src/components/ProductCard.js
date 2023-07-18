@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
     return (
         <div>
             {
-                    <div className=" flex flex-col items-center gap-3 justify-between shadow-lg shadow-slate-500  rounded-xl p-4  hover:scale-110 transition-all duration-300  h-[400px] hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] ">
+                    <div className=" flex flex-col items-center gap-3 justify-between  shadow-2xl   rounded-xl p-4  hover:scale-95 transition-all duration-300  h-[400px] hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] ">
                        
                         <p>{product.title.substr(0, 10)}...</p>
                         {/* <p>{product.description.split(" ").slice(0,10).join(" ")+"..."}...</p> */}
@@ -31,9 +31,9 @@ const ProductCard = ({ product }) => {
                             <span className="text-green-600 semi-bold">${product.price}</span>
                             {
                                 
-                                cart.some((p) => p.id == product.id) ? <button className="py-2 px-3 bg-slate-500 rounded-full text-white text-[13px] font-semibold" 
+                                cart.some((p) => p.id == product.id) ? <button className="py-2 px-3 bg-[#161D29] rounded-full text-white text-[13px] font-semibold" 
                                 onClick={handleDelete}>Remove Item</button>: 
-                                <button className="py-2 px-4 bg-slate-500 rounded-full text-white text-[13px] font-semibold "  onClick={handleAdd}>Add Item</button>
+                                <button className="py-2 px-4  bg-[#000814] rounded-full text-white text-[13px] font-semibold "  onClick={handleAdd}>Add Item</button>
 
 
                             }
